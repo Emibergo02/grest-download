@@ -12,8 +12,12 @@ export default function Home() {
                     <span className="text-2xl font-bold text-white mb-10">Download dei documenti</span>
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                    <DownloadPDF link={"https://drive.google.com/uc?export=download&id=1QDZChoNOrECLhiUNSKesMip6zZcbNryM"} fileName={"Scheda di iscrizione e deleghe"} />
-                    <DownloadPDF link={"https://drive.google.com/uc?export=download&id=1oljCdreQelJ8xzI3aHPWqztnwcqLsX0n"} fileName={"Regolamento e privacy"}/>
+                    <DownloadPDF size={233} pages={4}
+                                 link={"https://drive.google.com/uc?export=download&id=1QDZChoNOrECLhiUNSKesMip6zZcbNryM"}
+                                 fileName={"Scheda di iscrizione e deleghe"}/>
+                    <DownloadPDF size={398} pages={6}
+                                 link={"https://drive.google.com/uc?export=download&id=1oljCdreQelJ8xzI3aHPWqztnwcqLsX0n"}
+                                 fileName={"Regolamento e privacy"}/>
                 </div>
             </form>
         </main>
